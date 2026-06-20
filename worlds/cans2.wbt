@@ -1,0 +1,65 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/CircleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
+EXTERNPROTO "../protos/epuck.proto"
+
+WorldInfo {
+  ERP 0.8
+}
+Viewpoint {
+  orientation -0.581160962872382 0.5811609303305466 0.5696524451721237 2.1059852394401277
+  position -0.00011461080962937842 0.05251813030683071 2.631414706748419
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+CircleArena {
+  radius 0.7
+  floorTileSize 0.2 0.2
+}
+epuck {
+  controller "<none>"
+  supervisor TRUE
+  version "2"
+  turretSlot [
+    Lidar {
+      fieldOfView 6.28318
+      verticalFieldOfView 0.1
+      numberOfLayers 1
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+    Compass {
+    }
+  ]
+}
+DEF CAN Can {
+  translation 0.24 0.02 0.06
+}
+DEF CAN Can {
+  translation -0.18 -0.26 0.0600005
+  rotation -1 0 0 4.692820414042842e-06
+  name "can(1)"
+}
+DEF CAN Can {
+  translation -0.23 0.12 0.06
+  name "can(2)"
+}
+DEF CAN Can {
+  translation 0.1 0.33 0.06
+  name "can(3)"
+}
+DEF CAN Can {
+  translation -0.42 0.32 0.06
+  name "can(4)"
+}
+DEF CAN Can {
+  translation 0.33 -0.34 0.06
+  name "can(5)"
+}

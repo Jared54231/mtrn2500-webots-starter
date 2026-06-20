@@ -2,7 +2,7 @@
 
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/appearances/protos/Copper.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidPipe.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/UNSW-MTRN2500/webots-utils/refs/heads/main/protos/lab7/ds.proto"
+EXTERNPROTO "./ds.proto"
 
 PROTO epuck [
   field SFVec3f            translation                  0 0 0                    # Is `Pose.translation`.
