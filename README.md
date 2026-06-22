@@ -9,7 +9,7 @@ This repository is a Webots project containing world and proto files for you to 
     <img src="images/fork.png" alt="fork" width="150"/>
 </a>
 
-1. clone the forked repository (replacing `YOUR_USER_NAME` with your real user):
+2. Clone the forked repository (replacing `YOUR_USER_NAME` with your real user):
     ```bash
     git clone git@github.com:YOUR_USER_NAME/mtrn2500-webots-starter.git
     ```
