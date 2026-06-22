@@ -3,15 +3,15 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/CircleArena.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
 EXTERNPROTO "../protos/epuck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/apartment_structure/protos/Wall.proto"
 
 WorldInfo {
   ERP 0.8
 }
 Viewpoint {
-  orientation -0.2727922959518522 0.47600851131448485 0.8360623543884063 1.2018090607311749
-  position -0.6509644155788934 -1.11680826139211 0.8669951604790976
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 2.0488680617402004e-17 -2.687866092838452e-17 1.5359290798931753
 }
 TexturedBackground {
 }
@@ -22,22 +22,143 @@ CircleArena {
   floorTileSize 0.2 0.2
 }
 epuck {
+  translation -0.15 0.25 0
+  rotation 0 0 1 -1.5707953071795862
   controller "<none>"
+  supervisor TRUE
   version "2"
+  turretSlot [
+    Lidar {
+      fieldOfView 6.28318
+      verticalFieldOfView 0.1
+      numberOfLayers 1
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+    Compass {
+    }
+  ]
 }
-Can {
-  translation 0.36 -0.34 0.06
+Wall {
+  translation 0.05 0 0
+  size 0.1 0.001 0.05
 }
-Can {
-  translation -0.29 -0.16 0.06
-  rotation -1 0 0 4.692820414042842e-06
-  name "can(1)"
+Wall {
+  translation 0.05 0.2 0
+  name "wall(12)"
+  size 0.1 0.001 0.05
 }
-Can {
-  translation -0.23 0.12 0.06
-  name "can(2)"
+Wall {
+  translation 0.15 0.2 0
+  name "wall(13)"
+  size 0.1 0.001 0.05
 }
-Can {
-  translation 0.33 0.11 0.06
-  name "can(3)"
+Wall {
+  translation -0.05 0.2 0
+  name "wall(14)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.15 0.1 0
+  name "wall(15)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.05 0.1 0
+  name "wall(16)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.05 -0.2 0
+  name "wall(17)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.05 -0.2 0
+  name "wall(18)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.15 -0.2 0
+  name "wall(19)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.15 -0.1 0
+  name "wall(20)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 5.09809e-08 -0.0500001 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(1)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 1.52942e-07 -0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(2)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.2 -0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.2 -0.05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(4)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.2 0.05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(5)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.2 0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(6)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation 0.1 0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(21)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.1 -0.05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(7)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.2 -0.05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(8)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.2 -0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(9)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.2 0.05 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(10)"
+  size 0.1 0.001 0.05
+}
+Wall {
+  translation -0.2 0.15 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(11)"
+  size 0.1 0.001 0.05
 }

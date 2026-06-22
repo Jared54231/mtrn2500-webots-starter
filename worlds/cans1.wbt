@@ -23,7 +23,21 @@ CircleArena {
 }
 epuck {
   controller "<none>"
+  supervisor TRUE
   version "2"
+  turretSlot [
+    Lidar {
+      fieldOfView 6.28318
+      verticalFieldOfView 0.1
+      numberOfLayers 1
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+    Compass {
+    }
+  ]
 }
 Can {
   translation 0.36 -0.34 0.06

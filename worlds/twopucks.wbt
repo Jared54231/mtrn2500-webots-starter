@@ -3,7 +3,6 @@
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/CircleArena.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
 EXTERNPROTO "../protos/epuck.proto"
 
 WorldInfo {
@@ -22,22 +21,41 @@ CircleArena {
   floorTileSize 0.2 0.2
 }
 epuck {
+  name "e-puck-1"
   controller "<none>"
+  supervisor TRUE
   version "2"
+  turretSlot [
+    Lidar {
+      fieldOfView 6.28318
+      verticalFieldOfView 0.1
+      numberOfLayers 1
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+    Compass {
+    }
+  ]
 }
-Can {
-  translation 0.36 -0.34 0.06
-}
-Can {
-  translation -0.29 -0.16 0.06
-  rotation -1 0 0 4.692820414042842e-06
-  name "can(1)"
-}
-Can {
-  translation -0.23 0.12 0.06
-  name "can(2)"
-}
-Can {
-  translation 0.33 0.11 0.06
-  name "can(3)"
+epuck {
+  translation 0.3 0 0
+  name "e-puck-2"
+  controller "<none>"
+  supervisor TRUE
+  version "2"
+  turretSlot [
+    Lidar {
+      fieldOfView 6.28318
+      verticalFieldOfView 0.1
+      numberOfLayers 1
+    }
+  ]
+  groundSensorsSlot [
+    GPS {
+    }
+    Compass {
+    }
+  ]
 }
