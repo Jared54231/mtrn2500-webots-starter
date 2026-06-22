@@ -5,7 +5,9 @@ This repository is a Webots project containing world and proto files for you to 
 ## Getting Started
 
 1. You should create a copy of this repository by clicking the fork button:
-<img src="images/fork.png" alt="fork" width="150"/>
+<a href="https://github.com/UNSW-MTRN2500/mtrn2500-webots-starter/fork">
+    <img src="images/fork.png" alt="fork" width="150"/>
+</a>
 
 1. clone the forked repository (replacing `YOUR_USER_NAME` with your real user):
     ```bash
