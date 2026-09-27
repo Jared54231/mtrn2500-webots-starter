@@ -181,7 +181,7 @@ Robot {
           rotation 1 0 0 1.570796
           children [
             Cylinder {
-              height 0.005
+              height 0.0001
               radius 0.02
               subdivision 24
             }
