@@ -10,8 +10,8 @@ WorldInfo {
   ERP 0.8
 }
 Viewpoint {
-  orientation -0.5754161189814869 0.5811992439891287 0.5754161353340282 2.088636151886481
-  position -0.0006882004290924004 0.003523235422794563 1.5359290798931753
+  orientation -0.06526856916800074 -0.05113613161983095 0.9965566265505044 4.467451583868663
+  position -0.13363202332822172 0.6341292027423673 0.06565386884096781
 }
 TexturedBackground {
 }
@@ -23,8 +23,8 @@ CircleArena {
 }
 epuck {
   translation -0.15 0.25 0
-  rotation 0 0 1 -1.5707953071795862
-  controller "VelocityControl"
+  rotation 0 0 1 2.87979
+  controller "PositionControl"
   supervisor TRUE
   version "2"
   turretSlot [
